@@ -1,0 +1,30 @@
+1. getlocatortype
+
+        '''
+            function to get locator type
+            parameter: locator type like ID,XPATH, CSS.. et
+            return value: by. ID, by.XPATH..etc
+        '''
+
+
+2. getElement
+
+       '''
+            enter the text in the editbox field
+            parameters:  locatortype, locator
+            return value: element or None
+        '''
+
+3. launch_url
+      '''
+            launch the url
+            paramater: URL
+            return value: none
+        '''
+
+4. verify_title
+        '''
+            verify the title
+            paramater: title text to verify
+            return value: True or False
+        '''    
