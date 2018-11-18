@@ -3,6 +3,8 @@ from selenium.common.exceptions import *
 from selenium.webdriver.support.wait import WebDriverWait
 import selenium.webdriver.support.expected_conditions as ec
 from traceback import print_stack
+from utilities.custom_logger import custom_log
+import logging
 
 
 #list of APIs created
@@ -20,6 +22,8 @@ class SeleniumDriver():
     def __init__(self, driver):
         self.driver = driver
 
+    log = custom_log(logging.INFO)
+
     ##################################################################
     def launch_url(self, url):
         '''
@@ -29,9 +33,9 @@ class SeleniumDriver():
         '''
         try:
             self.driver.get(url)
-            print('URL: {} launch: success '.format(url))
+            SeleniumDriver.log('URL: "{}" launch: Pass '.format(url))
         except Exception as e:
-            print('URL: {} launch: fail... Exception error: {} '.format(url, e))
+            print('URL: "{}" launch: fail... Exception error: "{}" '.format(url, e))
 
     ##################################################################
 
@@ -47,7 +51,7 @@ class SeleniumDriver():
             print('title match - pass, title from the browser is ' + captured_title)
             return True
         else:
-            print('title match - fail, title from the browser {}, excepted browser title: {} '.
+            print('title match - fail, title from the browser "{}", excepted browser title: "{}" '.
                   format(captured_title,text))
             return False
 
@@ -75,7 +79,7 @@ class SeleniumDriver():
         elif locatortype == 'tagname':
             return By.TAG_NAME
         else:
-            print('locator type: {} is invalid'.format(locatortype))
+            print('locator type: "{}" is invalid'.format(locatortype))
             return None
 
     ##################################################################
@@ -87,32 +91,35 @@ class SeleniumDriver():
             return value: element or None
         '''
         element = None
-        by_value = self.get_by_type(locatortype)
         try:
-            element = self.driver.find_element(by_value,locator)
-            print('Element with locator {} using locator type {} found status: success'.format(locator, locatortype))
+            by_value = self.get_by_type(locatortype)
+            element = self.driver.find_element(by_value, locator)
+            print('Element with locator "{}" using locator type "{}" found status: Pass'.format(locator, locatortype))
             return element
         except NoSuchElementException as e:
-            print('Element with locator {} using locator type {} found status: Fail, exception message: {}'
-                  .format(locator,locatortype,e.message))
+            print('Element with locator "{}" using locator type "{}" found status: Fail, exception message: "{}"'
+                  .format(locator, locatortype, str(e)))
         except Exception as e:
-            print('Element with locator {} using locator type {} found status: Fail, exception message: {}'
-                  .format(locator,e.message))
+            print('Element with locator "{}" using locator type "{}" found status: Fail, exception message: "{}"'
+                  .format(locator,str(e)))
         return element
 
     ##################################################################
 
-    def enter_text(self, element, text):
+    def enter_text(self, data, locator, locatorid = 'id'):
         '''
         enter the value in the element
-        :parameter: element,text
+        :parameter: data, locator, locator id
         return:
         '''
         try:
-            self.driver.element.send_keys(text)
-            print('enter text on the element : pass')
+            element = self.get_element(locator, locatorid)
+            element.send_keys(data.strip())
+            print('Data "{}" enter on the element with locator "{}" using locator type "{}"  : pass'
+                  .format(data.strip(),locator, locatorid))
         except Exception as e:
-            print('enter text status: fail, exception message:'+e)
+            print('Data "{}" enter on the element with locator "{}" using locator type "{}"  : fail, exception message: "{}"'
+                  .format(data.strip(),locator, locatorid, str(e)))
 
     ##################################################################
 
@@ -131,10 +138,10 @@ class SeleniumDriver():
                                                      ElementNotVisibleException,
                                                      ElementNotSelectableException])
             element = wait.until(ec.element_to_be_clickable((byType,locator)))
-            print('Element with locator {} locator type {} appeared on the web page'.format(locator, locatortype))
+            print('Element with locator "{}" locator type "{}" appeared on the web page'.format(locator, locatortype))
         except Exception as e:
-            print('Element with locator {} using locator type {} is not appeared on the web page, exception message: {}'
-                  .format(locator,locatortype, e.message))
+            print('Element with locator "{}" using locator type "{}" is not appeared on the web page, exception message: "{}"'
+                  .format(locator,locatortype, str(e)))
             print_stack()
         return element
 
@@ -148,11 +155,12 @@ class SeleniumDriver():
         :return:
         '''
         try:
-            self.get_element(locator,locatortype).click
-            print('Element with locator {} using locator type {} click : success'.format(locator, locatortype))
-        except Exception as e
-            print('Element with locator {} locator type {}  click : fail, exception message :{}'
-                  .format(locator, locatortype,e.message))
+            element = self.get_element(locator, locatortype)
+            element.click()
+            print('Element with locator "{}" using locator type "{}" click : Pass'.format(locator, locatortype))
+        except Exception as e:
+            print('Element with locator "{}" locator type "{}"  click : fail, exception message :"{}"'
+                  .format(locator, locatortype,str(e)))
             print_stack()
 
     ##################################################################
@@ -167,10 +175,10 @@ class SeleniumDriver():
         try:
             element = self.get_element(locator, locatortype)
             if element is not None:
-                print('Element with locator {} using locator type {} is present '.format(locator, locatortype))
+                print('Element with locator "{}" using locator type "{}" is present '.format(locator, locatortype))
                 return True
             else:
-                print('Element with locator {} using locator type {} is not present '.format(locator, locatortype))
+                print('Element with locator "{}" using locator type "{}" is not present '.format(locator, locatortype))
                 return False
         except:
             print_stack()
