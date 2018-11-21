@@ -1,46 +1,36 @@
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from pages.home.login_page import LoginPage
+from pages.home.login_page import LoginPage as lp
 import unittest
+from utilities.custom_logger import custom_log
+import logging
+import pytest
+import time
 
 
 class LoginTests(unittest.TestCase):
 
+    log = custom_log(logging.INFO)
+
+    base_url = 'https://learn.letskodeit.com/p/practice'
+    driver = webdriver.Chrome()
+    driver.maximize_window()
+    driver.implicitly_wait(5)
+    test_obj = lp(driver)
+
+    @pytest.mark.run(order=2)
     def test_validLogin(self):
-        base_url = 'https://learn.letskodeit.com/p/practice'
-        driver = webdriver.Chrome()
-        driver.maximize_window()
-        driver.implicitly_wait(5)
-        driver.get(base_url)
+        LoginTests.driver.get(LoginTests.base_url)
+        LoginTests.test_obj.login('test@email.com', 'abcabc')
+        result = LoginTests.test_obj.verifyLoginSuccess()
+        assert result == True
+        LoginTests.driver.quit()
 
-        obj_test1 = LoginPage(driver)
-        obj_test1.login('test@email.com', 'abcabc')
-
-        # invalid_login_msg = driver.find_element(By.CSS_SELECTOR, '.alert-danger')
-        login_check = driver.find_element(By.ID, 'search-courses')
-        if login_check is not None:
-            print('Test pass, Login is success')
-        else:
-            print('Test fail, Login is not success')
-
-        driver.close()
-
+    @pytest.mark.run(order=1)
     def test_invalidLogin(self):
-        base_url = 'https://learn.letskodeit.com/p/practice'
-        driver = webdriver.Chrome()
-        driver.maximize_window()
-        driver.implicitly_wait(5)
-        driver.get(base_url)
-
-        obj_test2 = LoginPage(driver)
-        obj_test2.login('bac@email.com', 'abcabc')
-
-        invalid_login_msg = driver.find_element(By.CSS_SELECTOR, '.alert-danger')
-        if invalid_login_msg is not None:
-            print('Test pass, Login is not success as expected ')
-        else:
-            print('Test fail, Login is success')
-
-        driver.close()
+        LoginTests.driver.get(LoginTests.base_url)
+        # obj_test2 = lp(LoginTests.driver)
+        LoginTests.test_obj.login('bac@email.com', 'abcabc')
+        result = LoginTests.test_obj.verifyLoginFailed()
+        assert result == True
 
 

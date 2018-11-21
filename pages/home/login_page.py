@@ -1,8 +1,12 @@
 from selenium.webdriver.common.by import By
 from base.selenium_driver import SeleniumDriver
+from utilities.custom_logger import custom_log
+import logging
 
 
 class LoginPage(SeleniumDriver):
+
+    log = custom_log(logging.DEBUG)
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -14,20 +18,8 @@ class LoginPage(SeleniumDriver):
     _email_field = 'user_email'
     _pass_field = 'user_password'
     _login_button = 'commit'
-
-
-
-    # def getLoginLink(self):
-    #     return self.driver.find_element(By.XPATH, LoginPage._login_link)
-    #
-    # def getEmailField(self):
-    #     return self.driver.find_element(By.ID, LoginPage._email_field)
-    #
-    # def getPassField(self):
-    #     return self.driver.find_element(By.ID, LoginPage._pass_field)
-    #
-    # def getLoginButton(self):
-    #     return self.driver.find_element(By.NAME, LoginPage._login_button)
+    _search_course_field = 'search-courses'
+    _login_error = '//div[contains(text(),"Invalid email or password")]'
 
     def clickLoginLink(self):
         # self.getLoginLink().click()
@@ -41,14 +33,27 @@ class LoginPage(SeleniumDriver):
         # self.getPassField().send_keys(password)
         self.enter_text(password, LoginPage._pass_field)
 
-    def loginButton(self):
+    def clickLoginButton(self):
         # self.getLoginButton().click()
         self.element_click(LoginPage._login_button,locatortype='name')
 
-    def login(self, username, password):
+    def verifyLoginSuccess(self):
+        result = self.is_element_present(LoginPage._search_course_field)
+        return result
 
+    def verifyLoginFailed(self):
+        result = self.is_element_present(LoginPage._login_error,locatortype='xpath')
+        return result
+
+    def clearLoginFields(self):
+        emailField = self.get_element(LoginPage._email_field)
+        emailField.clear()
+        passField = self.get_element(LoginPage._pass_field)
+        passField.clear()
+
+
+    def login(self, username="", password=""):
         self.clickLoginLink()
         self.enterUserName(username)
         self.enterPassword(password)
-        self.loginButton()
-
+        self.clickLoginButton()
