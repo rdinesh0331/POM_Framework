@@ -1,0 +1,129 @@
+11:28:2018 05:31:17 AM - LoginPage - INFO - Element with locator "//a[contains(text(),"Login")]" using locator type "xpath" found status: Pass
+11:28:2018 05:31:17 AM - LoginPage - INFO - Element with locator "//a[contains(text(),"Login")]" using locator type "xpath" click status : Pass
+11:28:2018 05:31:20 AM - LoginPage - INFO - Element with locator "user_email" using locator type "id" found status: Pass
+11:28:2018 05:31:20 AM - LoginPage - INFO - Data "bac@email.com" enter status on the element with locator "user_email" using locator type "id"  : pass
+11:28:2018 05:31:20 AM - LoginPage - INFO - Element with locator "user_password" using locator type "id" found status: Pass
+11:28:2018 05:31:20 AM - LoginPage - INFO - Data "abcabc" enter status on the element with locator "user_password" using locator type "id"  : pass
+11:28:2018 05:31:20 AM - LoginPage - INFO - Element with locator "commit" using locator type "name" found status: Pass
+11:28:2018 05:31:21 AM - LoginPage - INFO - Element with locator "commit" using locator type "name" click status : Pass
+11:28:2018 05:31:21 AM - LoginPage - INFO - Element with locator "//div[contains(text(),"Invalid email or password")]" using locator type "xpath" found status: Pass
+11:28:2018 05:31:21 AM - LoginPage - INFO - Element with locator "//div[contains(text(),"Invalid email or password")]" using locator type "xpath" is present 
+11:28:2018 05:31:21 AM - TestRunStatus - INFO - ### VERIFICATION SUCCESS
+11:28:2018 05:31:21 AM - TestRunStatus - INFO - Invalid login check### TEST PASSED
+11:28:2018 05:31:23 AM - LoginPage - INFO - Element with locator "//a[contains(text(),"Login")]" using locator type "xpath" found status: Pass
+11:28:2018 05:31:23 AM - LoginPage - INFO - Element with locator "//a[contains(text(),"Login")]" using locator type "xpath" click status : Pass
+11:28:2018 05:31:24 AM - LoginPage - INFO - Element with locator "user_email" using locator type "id" found status: Pass
+11:28:2018 05:31:24 AM - LoginPage - INFO - Data "test@email.com" enter status on the element with locator "user_email" using locator type "id"  : pass
+11:28:2018 05:31:24 AM - LoginPage - INFO - Element with locator "user_password" using locator type "id" found status: Pass
+11:28:2018 05:31:24 AM - LoginPage - INFO - Data "abcabc" enter status on the element with locator "user_password" using locator type "id"  : pass
+11:28:2018 05:31:24 AM - LoginPage - INFO - Element with locator "commit" using locator type "name" found status: Pass
+11:28:2018 05:31:27 AM - LoginPage - INFO - Element with locator "commit" using locator type "name" click status : Pass
+11:28:2018 05:31:27 AM - LoginPage - INFO - title match - pass, title from the browser is Let's Kode It
+11:28:2018 05:31:27 AM - TestRunStatus - INFO - ### VERIFICATION SUCCESS
+11:28:2018 05:31:27 AM - LoginPage - INFO - Element with locator "search-courses" using locator type "id" found status: Pass
+11:28:2018 05:31:27 AM - LoginPage - INFO - Element with locator "search-courses" using locator type "id" is present 
+11:28:2018 05:31:27 AM - TestRunStatus - INFO - ### VERIFICATION SUCCESS
+11:28:2018 05:31:27 AM - TestRunStatus - INFO - Valid login check### TEST PASSED
+11:28:2018 05:34:41 AM - LoginPage - INFO - Element with locator "//a[contains(text(),"Login")]" using locator type "xpath" found status: Pass
+11:28:2018 05:34:41 AM - LoginPage - INFO - Element with locator "//a[contains(text(),"Login")]" using locator type "xpath" click status : Pass
+11:28:2018 05:34:43 AM - LoginPage - INFO - Element with locator "user_email" using locator type "id" found status: Pass
+11:28:2018 05:34:43 AM - LoginPage - INFO - Data "bac@email.com" enter status on the element with locator "user_email" using locator type "id"  : pass
+11:28:2018 05:34:43 AM - LoginPage - INFO - Element with locator "user_password" using locator type "id" found status: Pass
+11:28:2018 05:34:43 AM - LoginPage - INFO - Data "abcabc" enter status on the element with locator "user_password" using locator type "id"  : pass
+11:28:2018 05:34:44 AM - LoginPage - INFO - Element with locator "commit" using locator type "name" found status: Pass
+11:28:2018 05:34:45 AM - LoginPage - INFO - Element with locator "commit" using locator type "name" click status : Pass
+11:28:2018 05:34:45 AM - LoginPage - INFO - Element with locator "//div[contains(text(),"Invalid email or password")]" using locator type "xpath" found status: Pass
+11:28:2018 05:34:45 AM - LoginPage - INFO - Element with locator "//div[contains(text(),"Invalid email or password")]" using locator type "xpath" is present 
+11:28:2018 05:34:45 AM - TestRunStatus - INFO - ### VERIFICATION SUCCESS
+11:28:2018 05:34:45 AM - TestRunStatus - INFO - Invalid login check### TEST PASSED
+11:28:2018 05:34:46 AM - LoginPage - INFO - Element with locator "//a[contains(text(),"Login")]" using locator type "xpath" found status: Pass
+11:28:2018 05:34:46 AM - LoginPage - INFO - Element with locator "//a[contains(text(),"Login")]" using locator type "xpath" click status : Pass
+11:28:2018 05:34:48 AM - LoginPage - INFO - Element with locator "user_email" using locator type "id" found status: Pass
+11:28:2018 05:34:48 AM - LoginPage - INFO - Data "test@email.com" enter status on the element with locator "user_email" using locator type "id"  : pass
+11:28:2018 05:34:48 AM - LoginPage - INFO - Element with locator "user_password" using locator type "id" found status: Pass
+11:28:2018 05:34:48 AM - LoginPage - INFO - Data "abcabc" enter status on the element with locator "user_password" using locator type "id"  : pass
+11:28:2018 05:34:48 AM - LoginPage - INFO - Element with locator "commit" using locator type "name" found status: Pass
+11:28:2018 05:34:50 AM - LoginPage - INFO - Element with locator "commit" using locator type "name" click status : Pass
+11:28:2018 05:34:50 AM - LoginPage - ERROR - title match - fail, title from the browser "Let's Kode It", excepted browser title: "lets kode it" 
+11:28:2018 05:34:50 AM - TestRunStatus - INFO - ### VERIFICATION FAILED title mismatch
+11:28:2018 05:34:50 AM - TestRunStatus - INFO - screenshotDirectory --> ../screenshots/
+11:28:2018 05:34:50 AM - TestRunStatus - INFO - relativefilepath --> ../screenshots/title mismatch.1543401290.png
+11:28:2018 05:34:50 AM - TestRunStatus - INFO - currentDirectory --> /Users/dineshkumarrajendran/Documents/Selenium_Automation/Projects - Python/PageObjectModel/base
+11:28:2018 05:34:50 AM - TestRunStatus - INFO - destinationFile --> /Users/dineshkumarrajendran/Documents/Selenium_Automation/Projects - Python/PageObjectModel/base/../screenshots/title mismatch.1543401290.png
+11:28:2018 05:34:50 AM - TestRunStatus - INFO - destinationDirectory --> /Users/dineshkumarrajendran/Documents/Selenium_Automation/Projects - Python/PageObjectModel/base/../screenshots/
+11:28:2018 05:34:50 AM - TestRunStatus - INFO - Screenshot saved to directory /Users/dineshkumarrajendran/Documents/Selenium_Automation/Projects - Python/PageObjectModel/base/../screenshots/title mismatch.1543401290.png
+11:28:2018 05:34:50 AM - LoginPage - INFO - Element with locator "search-courses" using locator type "id" found status: Pass
+11:28:2018 05:34:50 AM - LoginPage - INFO - Element with locator "search-courses" using locator type "id" is present 
+11:28:2018 05:34:50 AM - TestRunStatus - INFO - ### VERIFICATION SUCCESS
+11:28:2018 05:34:50 AM - TestRunStatus - ERROR - Valid login check### TEST FAILED
+11:28:2018 02:06:12 PM - LoginPage - INFO - Element with locator "//a[contains(text(),"Login")]" using locator type "xpath" found status: Pass
+11:28:2018 02:06:12 PM - LoginPage - INFO - Element with locator "//a[contains(text(),"Login")]" using locator type "xpath" click status : Pass
+11:28:2018 02:06:17 PM - LoginPage - ERROR - Element with locator "user_email" using locator type "id" found status: Fail, exception message: "Message: no such element: Unable to locate element: {"method":"id","selector":"user_email"}
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.16299 x86_64)
+"
+11:28:2018 02:06:17 PM - LoginPage - ERROR - Data "bac@email.com" enter status on the element with locator "user_email" using locator type "id"  : fail, exception message: "'NoneType' object has no attribute 'send_keys'"
+11:28:2018 02:06:23 PM - LoginPage - ERROR - Element with locator "user_password" using locator type "id" found status: Fail, exception message: "Message: no such element: Unable to locate element: {"method":"id","selector":"user_password"}
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.16299 x86_64)
+"
+11:28:2018 02:06:23 PM - LoginPage - ERROR - Data "abcabc" enter status on the element with locator "user_password" using locator type "id"  : fail, exception message: "'NoneType' object has no attribute 'send_keys'"
+11:28:2018 02:06:28 PM - LoginPage - ERROR - Element with locator "commit" using locator type "name" found status: Fail, exception message: "Message: no such element: Unable to locate element: {"method":"name","selector":"commit"}
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.16299 x86_64)
+"
+11:28:2018 02:06:28 PM - LoginPage - ERROR - Element with locator "commit" using locator type "name"  click status : fail, exception message :"'NoneType' object has no attribute 'click'"
+11:28:2018 02:06:33 PM - LoginPage - ERROR - Element with locator "//div[contains(text(),"Invalid email or password")]" using locator type "xpath" found status: Fail, exception message: "Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),"Invalid email or password")]"}
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.16299 x86_64)
+"
+11:28:2018 02:06:33 PM - LoginPage - ERROR - Element with locator "//div[contains(text(),"Invalid email or password")]" using locator type "xpath" is not present 
+11:28:2018 02:06:33 PM - TestRunStatus - INFO - ### VERIFICATION FAILED Login was successful
+11:28:2018 02:06:33 PM - TestRunStatus - INFO - screenshotDirectory --> ../screenshots/
+11:28:2018 02:06:33 PM - TestRunStatus - INFO - relativefilepath --> ../screenshots/Login was successful.1543431993.png
+11:28:2018 02:06:33 PM - TestRunStatus - INFO - currentDirectory --> C:\Users\drajendran27\Documents\Selenium project\WebDriver - Python\PageObject_Framework\base
+11:28:2018 02:06:33 PM - TestRunStatus - INFO - destinationFile --> C:\Users\drajendran27\Documents\Selenium project\WebDriver - Python\PageObject_Framework\base\../screenshots/Login was successful.1543431993.png
+11:28:2018 02:06:33 PM - TestRunStatus - INFO - destinationDirectory --> C:\Users\drajendran27\Documents\Selenium project\WebDriver - Python\PageObject_Framework\base\../screenshots/
+11:28:2018 02:06:33 PM - TestRunStatus - INFO - Screenshot saved to directory C:\Users\drajendran27\Documents\Selenium project\WebDriver - Python\PageObject_Framework\base\../screenshots/Login was successful.1543431993.png
+11:28:2018 02:06:33 PM - TestRunStatus - ERROR - Invalid login check### TEST FAILED
+11:28:2018 02:07:09 PM - LoginPage - ERROR - Element with locator "//a[contains(text(),"Login")]" using locator type "xpath" found status: Fail, exception message: "Message: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),"Login")]"}
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.16299 x86_64)
+"
+11:28:2018 02:07:09 PM - LoginPage - ERROR - Element with locator "//a[contains(text(),"Login")]" using locator type "xpath"  click status : fail, exception message :"'NoneType' object has no attribute 'click'"
+11:28:2018 02:07:14 PM - LoginPage - ERROR - Element with locator "user_email" using locator type "id" found status: Fail, exception message: "Message: no such element: Unable to locate element: {"method":"id","selector":"user_email"}
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.16299 x86_64)
+"
+11:28:2018 02:07:14 PM - LoginPage - ERROR - Data "test@email.com" enter status on the element with locator "user_email" using locator type "id"  : fail, exception message: "'NoneType' object has no attribute 'send_keys'"
+11:28:2018 02:07:19 PM - LoginPage - ERROR - Element with locator "user_password" using locator type "id" found status: Fail, exception message: "Message: no such element: Unable to locate element: {"method":"id","selector":"user_password"}
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.16299 x86_64)
+"
+11:28:2018 02:07:19 PM - LoginPage - ERROR - Data "abcabc" enter status on the element with locator "user_password" using locator type "id"  : fail, exception message: "'NoneType' object has no attribute 'send_keys'"
+11:28:2018 02:07:24 PM - LoginPage - ERROR - Element with locator "commit" using locator type "name" found status: Fail, exception message: "Message: no such element: Unable to locate element: {"method":"name","selector":"commit"}
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.16299 x86_64)
+"
+11:28:2018 02:07:24 PM - LoginPage - ERROR - Element with locator "commit" using locator type "name"  click status : fail, exception message :"'NoneType' object has no attribute 'click'"
+11:28:2018 02:07:24 PM - LoginPage - ERROR - title match - fail, title from the browser "Application Error", excepted browser title: "lets kode it" 
+11:28:2018 02:07:24 PM - TestRunStatus - INFO - ### VERIFICATION FAILED title mismatch
+11:28:2018 02:07:24 PM - TestRunStatus - INFO - screenshotDirectory --> ../screenshots/
+11:28:2018 02:07:24 PM - TestRunStatus - INFO - relativefilepath --> ../screenshots/title mismatch.1543432045.png
+11:28:2018 02:07:24 PM - TestRunStatus - INFO - currentDirectory --> C:\Users\drajendran27\Documents\Selenium project\WebDriver - Python\PageObject_Framework\base
+11:28:2018 02:07:24 PM - TestRunStatus - INFO - destinationFile --> C:\Users\drajendran27\Documents\Selenium project\WebDriver - Python\PageObject_Framework\base\../screenshots/title mismatch.1543432045.png
+11:28:2018 02:07:24 PM - TestRunStatus - INFO - destinationDirectory --> C:\Users\drajendran27\Documents\Selenium project\WebDriver - Python\PageObject_Framework\base\../screenshots/
+11:28:2018 02:07:25 PM - TestRunStatus - INFO - Screenshot saved to directory C:\Users\drajendran27\Documents\Selenium project\WebDriver - Python\PageObject_Framework\base\../screenshots/title mismatch.1543432045.png
+11:28:2018 02:07:30 PM - LoginPage - ERROR - Element with locator "search-courses" using locator type "id" found status: Fail, exception message: "Message: no such element: Unable to locate element: {"method":"id","selector":"search-courses"}
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.16299 x86_64)
+"
+11:28:2018 02:07:30 PM - LoginPage - ERROR - Element with locator "search-courses" using locator type "id" is not present 
+11:28:2018 02:07:30 PM - TestRunStatus - INFO - ### VERIFICATION FAILED Login was not successful
+11:28:2018 02:07:30 PM - TestRunStatus - INFO - screenshotDirectory --> ../screenshots/
+11:28:2018 02:07:30 PM - TestRunStatus - INFO - relativefilepath --> ../screenshots/Login was not successful.1543432051.png
+11:28:2018 02:07:30 PM - TestRunStatus - INFO - currentDirectory --> C:\Users\drajendran27\Documents\Selenium project\WebDriver - Python\PageObject_Framework\base
+11:28:2018 02:07:30 PM - TestRunStatus - INFO - destinationFile --> C:\Users\drajendran27\Documents\Selenium project\WebDriver - Python\PageObject_Framework\base\../screenshots/Login was not successful.1543432051.png
+11:28:2018 02:07:30 PM - TestRunStatus - INFO - destinationDirectory --> C:\Users\drajendran27\Documents\Selenium project\WebDriver - Python\PageObject_Framework\base\../screenshots/
+11:28:2018 02:07:31 PM - TestRunStatus - INFO - Screenshot saved to directory C:\Users\drajendran27\Documents\Selenium project\WebDriver - Python\PageObject_Framework\base\../screenshots/Login was not successful.1543432051.png
+11:28:2018 02:07:31 PM - TestRunStatus - ERROR - Valid login check### TEST FAILED
