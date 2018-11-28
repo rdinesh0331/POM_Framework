@@ -1,0 +1,26 @@
+11:25:2018 01:25:43 AM - LoginPage - INFO - Element with locator "//a[contains(text(),"Login")]" using locator type "xpath" found ++ status: Pass
+11:25:2018 01:25:43 AM - LoginPage - INFO - Element with locator "//a[contains(text(),"Login")]" using locator type "xpath" click status : Pass
+11:25:2018 01:25:45 AM - LoginPage - INFO - Element with locator "user_email" using locator type "id" found ++ status: Pass
+11:25:2018 01:25:45 AM - LoginPage - INFO - Data "bac@email.com" enter status on the element with locator "user_email" using locator type "id"  : pass
+11:25:2018 01:25:45 AM - LoginPage - INFO - Element with locator "user_password" using locator type "id" found ++ status: Pass
+11:25:2018 01:25:45 AM - LoginPage - INFO - Data "abcabc" enter status on the element with locator "user_password" using locator type "id"  : pass
+11:25:2018 01:25:45 AM - LoginPage - INFO - Element with locator "commit" using locator type "name" found ++ status: Pass
+11:25:2018 01:25:47 AM - LoginPage - INFO - Element with locator "commit" using locator type "name" click status : Pass
+11:25:2018 01:25:47 AM - LoginPage - INFO - Element with locator "//div[contains(text(),"Invalid email or password")]" using locator type "xpath" found ++ status: Pass
+11:25:2018 01:25:47 AM - LoginPage - INFO - Element with locator "//div[contains(text(),"Invalid email or password")]" using locator type "xpath" is present 
+11:25:2018 01:25:47 AM - TestRunStatus - INFO - ### VERIFICATION SUCCESS
+11:25:2018 01:25:47 AM - TestRunStatus - INFO - Invalid login check### TEST PASSED
+11:25:2018 01:25:48 AM - LoginPage - INFO - Element with locator "//a[contains(text(),"Login")]" using locator type "xpath" found ++ status: Pass
+11:25:2018 01:25:48 AM - LoginPage - INFO - Element with locator "//a[contains(text(),"Login")]" using locator type "xpath" click status : Pass
+11:25:2018 01:25:50 AM - LoginPage - INFO - Element with locator "user_email" using locator type "id" found ++ status: Pass
+11:25:2018 01:25:50 AM - LoginPage - INFO - Data "test@email.com" enter status on the element with locator "user_email" using locator type "id"  : pass
+11:25:2018 01:25:50 AM - LoginPage - INFO - Element with locator "user_password" using locator type "id" found ++ status: Pass
+11:25:2018 01:25:50 AM - LoginPage - INFO - Data "abcabc" enter status on the element with locator "user_password" using locator type "id"  : pass
+11:25:2018 01:25:50 AM - LoginPage - INFO - Element with locator "commit" using locator type "name" found ++ status: Pass
+11:25:2018 01:25:52 AM - LoginPage - INFO - Element with locator "commit" using locator type "name" click status : Pass
+11:25:2018 01:25:52 AM - LoginPage - INFO - title match - pass, title from the browser is Let's Kode It
+11:25:2018 01:25:52 AM - TestRunStatus - INFO - ### VERIFICATION SUCCESS
+11:25:2018 01:25:52 AM - LoginPage - INFO - Element with locator "search-courses" using locator type "id" found ++ status: Pass
+11:25:2018 01:25:52 AM - LoginPage - INFO - Element with locator "search-courses" using locator type "id" is present 
+11:25:2018 01:25:52 AM - TestRunStatus - INFO - ### VERIFICATION SUCCESS
+11:25:2018 01:25:52 AM - TestRunStatus - INFO - Valid login check### TEST PASSED
