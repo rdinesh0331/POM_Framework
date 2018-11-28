@@ -127,3 +127,35 @@
 11:28:2018 02:07:30 PM - TestRunStatus - INFO - destinationDirectory --> C:\Users\drajendran27\Documents\Selenium project\WebDriver - Python\PageObject_Framework\base\../screenshots/
 11:28:2018 02:07:31 PM - TestRunStatus - INFO - Screenshot saved to directory C:\Users\drajendran27\Documents\Selenium project\WebDriver - Python\PageObject_Framework\base\../screenshots/Login was not successful.1543432051.png
 11:28:2018 02:07:31 PM - TestRunStatus - ERROR - Valid login check### TEST FAILED
+11:28:2018 05:22:45 PM - LoginPage - INFO - Element with locator "//a[contains(text(),"Login")]" using locator type "xpath" found status: Pass
+11:28:2018 05:22:45 PM - LoginPage - INFO - Element with locator "//a[contains(text(),"Login")]" using locator type "xpath" click status : Pass
+11:28:2018 05:22:49 PM - LoginPage - INFO - Element with locator "user_email" using locator type "id" found status: Pass
+11:28:2018 05:22:49 PM - LoginPage - INFO - Data "bac@email.com" enter status on the element with locator "user_email" using locator type "id"  : pass
+11:28:2018 05:22:49 PM - LoginPage - INFO - Element with locator "user_password" using locator type "id" found status: Pass
+11:28:2018 05:22:49 PM - LoginPage - INFO - Data "abcabc" enter status on the element with locator "user_password" using locator type "id"  : pass
+11:28:2018 05:22:49 PM - LoginPage - INFO - Element with locator "commit" using locator type "name" found status: Pass
+11:28:2018 05:22:52 PM - LoginPage - INFO - Element with locator "commit" using locator type "name" click status : Pass
+11:28:2018 05:22:52 PM - LoginPage - INFO - Element with locator "//div[contains(text(),"Invalid email or password")]" using locator type "xpath" found status: Pass
+11:28:2018 05:22:52 PM - LoginPage - INFO - Element with locator "//div[contains(text(),"Invalid email or password")]" using locator type "xpath" is present 
+11:28:2018 05:22:52 PM - TestRunStatus - INFO - ### VERIFICATION SUCCESS
+11:28:2018 05:22:52 PM - TestRunStatus - INFO - Invalid login check### TEST PASSED
+11:28:2018 05:22:55 PM - LoginPage - INFO - Element with locator "//a[contains(text(),"Login")]" using locator type "xpath" found status: Pass
+11:28:2018 05:22:55 PM - LoginPage - INFO - Element with locator "//a[contains(text(),"Login")]" using locator type "xpath" click status : Pass
+11:28:2018 05:22:58 PM - LoginPage - INFO - Element with locator "user_email" using locator type "id" found status: Pass
+11:28:2018 05:22:58 PM - LoginPage - INFO - Data "test@email.com" enter status on the element with locator "user_email" using locator type "id"  : pass
+11:28:2018 05:22:58 PM - LoginPage - INFO - Element with locator "user_password" using locator type "id" found status: Pass
+11:28:2018 05:22:58 PM - LoginPage - INFO - Data "abcabc" enter status on the element with locator "user_password" using locator type "id"  : pass
+11:28:2018 05:22:58 PM - LoginPage - INFO - Element with locator "commit" using locator type "name" found status: Pass
+11:28:2018 05:23:01 PM - LoginPage - INFO - Element with locator "commit" using locator type "name" click status : Pass
+11:28:2018 05:23:01 PM - LoginPage - ERROR - title match - fail, title from the browser "Let's Kode It", excepted browser title: "lets kode it" 
+11:28:2018 05:23:01 PM - TestRunStatus - INFO - ### VERIFICATION FAILED title mismatch
+11:28:2018 05:23:01 PM - TestRunStatus - INFO - screenshotDirectory --> ../screenshots/
+11:28:2018 05:23:01 PM - TestRunStatus - INFO - relativefilepath --> ../screenshots/title mismatch.1543443781.png
+11:28:2018 05:23:01 PM - TestRunStatus - INFO - currentDirectory --> C:\Users\drajendran27\Documents\Selenium project\WebDriver - Python\PageObject_Framework\base
+11:28:2018 05:23:01 PM - TestRunStatus - INFO - destinationFile --> C:\Users\drajendran27\Documents\Selenium project\WebDriver - Python\PageObject_Framework\base\../screenshots/title mismatch.1543443781.png
+11:28:2018 05:23:01 PM - TestRunStatus - INFO - destinationDirectory --> C:\Users\drajendran27\Documents\Selenium project\WebDriver - Python\PageObject_Framework\base\../screenshots/
+11:28:2018 05:23:01 PM - TestRunStatus - INFO - Screenshot saved to directory C:\Users\drajendran27\Documents\Selenium project\WebDriver - Python\PageObject_Framework\base\../screenshots/title mismatch.1543443781.png
+11:28:2018 05:23:01 PM - LoginPage - INFO - Element with locator "search-courses" using locator type "id" found status: Pass
+11:28:2018 05:23:01 PM - LoginPage - INFO - Element with locator "search-courses" using locator type "id" is present 
+11:28:2018 05:23:01 PM - TestRunStatus - INFO - ### VERIFICATION SUCCESS
+11:28:2018 05:23:01 PM - TestRunStatus - ERROR - Valid login check### TEST FAILED
