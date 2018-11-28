@@ -16,7 +16,7 @@ class WebDriverFactory():
         elif self.browser == 'chrome':
             driver = webdriver.Chrome()
         else:
-            driver = webdriver.firefox
+            driver = webdriver.Firefox()
         driver.maximize_window()
         driver.implicitly_wait(5)
         driver.get(base_url)

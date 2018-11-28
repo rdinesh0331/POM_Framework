@@ -27,7 +27,7 @@ class LoginTests(unittest.TestCase):
     @pytest.mark.run(order=2)
     def test_validLogin(self):
         self.test_obj.login('test@email.com', 'abcabc')
-        result1 = self.test_obj.verify_title("Let's Kode It")
+        result1 = self.test_obj.verify_title("Lets Kode It")
         self.test_status.mark(result1,'title mismatch')
         result2 = self.test_obj.verifyLoginSuccess()
         self.test_status.markFinal('Valid login check', result2, 'Login was not successful')
