@@ -23,9 +23,11 @@ class TestRunStatus(SeleniumDriver):
                 else:
                     self.resultlist.append('FAIL')
                     self.log.info('### VERIFICATION FAILED '+resultMessage)
+                    self.screenshot(resultMessage)
             else:
                 self.resultlist.append('FAIL')
                 self.log.info('### VERIFICATION FAILED ' + resultMessage)
+                self.screenshot(resultMessage)
 
         except:
             self.resultlist.append('FAIL')
@@ -46,4 +48,7 @@ class TestRunStatus(SeleniumDriver):
             self.log.info(testcase + '### TEST PASSED')
             self.resultlist.clear()
             assert True == True
+
+
+
 

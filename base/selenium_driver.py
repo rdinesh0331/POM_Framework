@@ -5,6 +5,8 @@ import selenium.webdriver.support.expected_conditions as ec
 from traceback import print_stack
 from utilities.custom_logger import custom_log
 import logging
+import time
+import os
 
 
 #list of APIs created
@@ -24,6 +26,30 @@ class SeleniumDriver():
 
     def __init__(self, driver):
         self.driver = driver
+
+
+    def screenshot(self,testMessage):
+
+        filename = testMessage+'.'+str(round(time.time()))+'.png'
+        screenshotDirectory = '../screenshots/'
+        self.log.info('screenshotDirectory --> '+ screenshotDirectory)
+        relativefilepath = screenshotDirectory+filename
+        self.log.info('relativefilepath --> ' + relativefilepath)
+        currentDirectory = os.path.dirname(__file__)
+        self.log.info('currentDirectory --> ' + currentDirectory)
+        destinationFile =  os.path.join(currentDirectory,relativefilepath)
+        self.log.info('destinationFile --> ' + destinationFile)
+        destinationDirectory = os.path.join(currentDirectory,screenshotDirectory)
+        self.log.info('destinationDirectory --> ' + destinationDirectory)
+        try:
+            if not os.path.exists(destinationDirectory):
+                os.makedirs(destinationDirectory)
+            self.driver.save_screenshot(destinationFile)
+            self.log.info('Screenshot saved to directory '+destinationFile)
+        except:
+            self.log.error ('EXCEPTION OCCURED while saving the file')
+            print_stack()
+
 
 
     ##################################################################
